@@ -1,0 +1,69 @@
+#TopNavMain {
+	background-color: #6380ba;
+	# background:url('../images/top_nav_menu.gif') repeat-x center center;
+	background:color:red repeat-x center center;
+	height: 42px;
+	margin: 0;
+	clear: both;
+}
+
+#TopNavButton {
+	margin:9px 0 0 10px;
+	float:left;
+	margin-top: 8px;
+	margin-top: 9px;
+}
+
+#TopNavButton ul {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+
+#TopNavButton ul li {
+	display:inline;
+	margin-left:-10px;
+	float:left;
+	height:28px;
+	width:100px;
+	margin-top:5px;
+	background:url('../images/button.png') no-repeat center center;
+	text-align:center;
+}
+
+#TopNavButton ul li.Active{
+background:url('../images/button_active.png') no-repeat center center;
+}
+
+#TopNavButton ul li.Active a{
+	color:#000000;
+}
+#TopNavButton ul li a {
+	text-decoration: none;
+	font-size:12px;
+	font-weight:600;
+	color:#CDE9FF;
+}
+
+.TabButton{
+	display:block;
+	margin:0;
+	padding:7px 8px 8px;
+}
+
+#GoHome {
+font-size:13px;
+float: right;
+margin: 15px 10px 0 0;
+color: #FFFFFF;
+}
+ 
+#GoHome a {
+margin: 0 1px 0 0;
+color: #FFFFFF;
+text-decoration: none;
+}
+ 
+#GoHome a:hover {
+color: #666666;
+}

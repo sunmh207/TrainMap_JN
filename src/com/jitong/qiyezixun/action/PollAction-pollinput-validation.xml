@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0//EN"   "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="poll.topic">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>主题不能为空</message>
+		</field-validator>
+	</field>
+	<field name="poll.startDate">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>开始日期不能为空</message>
+		</field-validator>
+	</field>
+	<field name="poll.endDate">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>结束日期不能为空</message>
+		</field-validator>
+	</field>
+	<field name="poll.desc">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>描述不能为空</message>
+		</field-validator>
+	</field>
+</validators>

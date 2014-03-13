@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.action.extension" value="do" />
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.i18n.encoding" value="UTF-8"/>
+	<constant name="struts.custom.i18n.resources" value="struts-messages"></constant>
+	
+	
+	<!-- <constant name="struts.multipart.maxSize" value="102400" /> -->
+
+	<package name="default" namespace="/" extends="struts-default">
+	
+		<interceptors>
+			<interceptor name="categoryAware" class="com.jitong.common.action.CategoryItemAutowiringInterceptor" />
+			<interceptor name="auth" class="com.jitong.common.action.AuthInterceptor" />
+			<interceptor-stack name="myStack">
+				<interceptor-ref name="defaultStack" >
+					<param name="fileUpload.maximumSize">81920</param>
+				</interceptor-ref>
+				<interceptor-ref name="auth" />
+				<interceptor-ref name="categoryAware" />
+				<interceptor-ref name="paramsPrepareParamsStack"/>
+			</interceptor-stack>
+			<interceptor-stack name="myStackNoAuth">
+				<interceptor-ref name="defaultStack" >
+					<param name="fileUpload.maximumSize">81920</param>
+				</interceptor-ref>
+				<interceptor-ref name="categoryAware" />
+				<interceptor-ref name="paramsPrepareParamsStack"/>
+			</interceptor-stack>
+			<interceptor-stack name="myStackNoAuthNoCategory">
+				<interceptor-ref name="defaultStack" >
+					<param name="fileUpload.maximumSize">81920</param>
+				</interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack"/>
+			</interceptor-stack>
+		</interceptors>
+	<default-interceptor-ref name="paramsPrepareParamsStack"/>
+
+		<global-results>
+			<result type="redirect" name="login">Login.do</result>	
+			<result name="exportExcel">/WEB-INF/jsp/exportExcel.jsp</result>						
+		</global-results>
+		
+		<action name="Login" class="com.stanley.LoginAction">
+			<result name="input">/WEB-INF/jsp/login.jsp</result>
+			<result name="success">/WEB-INF/jsp/main.jsp</result>
+		</action>
+				
+		<action name="index" class="com.jitong.common.action.WelcomeAction">
+			<result>/WEB-INF/jsp/main.jsp</result>
+		</action>
+		
+		<action name="popLocomotiveQuery" class="com.stanley.console.action.PopLocomotiveQueryAction"	method="list">
+			<result name="success">/WEB-INF/jsp/console/popLocomotiveQuery.jsp</result>
+		</action>
+		
+		
+		<!-- TaiWei All Maintainence -->
+		<action name="taiweialldata_qd" class="com.stanley.taiweidata.TaiWeiAllDataAction_QD" method="list">
+			<result name="success">/WEB-INF/jsp/taiweidata/taiweiall_list_qd.jsp</result>
+		</action>
+		<action name="taiweialldatainput_qd" class="com.stanley.taiweidata.TaiWeiAllDataAction_QD" method="input">
+			<result name="success" type="redirectAction">taiweialldata_qd</result>
+			<result name="input">/WEB-INF/jsp/taiweidata/taiwei_form_qd.jsp</result>
+			<result name="move">/WEB-INF/jsp/taiweidata/taiwei_move_qd.jsp</result>
+		</action>
+		<action name="taiweialldata_lc" class="com.stanley.taiweidata.TaiWeiAllDataAction_LC" method="list">
+			<result name="success">/WEB-INF/jsp/taiweidata/taiweiall_list_lc.jsp</result>
+		</action>
+		<action name="taiweialldatainput_lc" class="com.stanley.taiweidata.TaiWeiAllDataAction_LC" method="input">
+			<result name="success" type="redirectAction">taiweialldata_lc</result>
+			<result name="input">/WEB-INF/jsp/taiweidata/taiwei_form_lc.jsp</result>
+			<result name="move">/WEB-INF/jsp/taiweidata/taiwei_move_lc.jsp</result>
+		</action>
+		
+		
+		<action name="qry" class="com.stanley.qry.JCQueryAction"	method="list">
+			<result name="success">/WEB-INF/jsp/qry/gudaohistorylist.jsp</result>
+		</action>
+
+
+		
+
+		<action name="jichezhuangtai" class="com.stanley.jichezhuangtai.JichezhuangtaiAction" method="list">
+			<result name="success">/WEB-INF/jsp/jichezhuangtai/jichezhuangtailist.jsp</result>
+		</action>
+		<action name="jichezhuangtaiinput" class="com.stanley.jichezhuangtai.JichezhuangtaiAction" method="input">
+			<result name="success" type="redirectAction">jichezhuangtai</result>
+			<result name="input">/WEB-INF/jsp/jichezhuangtai/jichezhuangtaiform.jsp</result>
+		</action>
+		
+		<action name="fanghuyongpin" class="com.stanley.fanghuyongpin.FanghuyongpinAction" method="list">
+			<result name="success">/WEB-INF/jsp/fanghuyongpin/fanghuyongpinlist.jsp</result>
+		</action>
+		<action name="fanghuyongpin_view" class="com.stanley.fanghuyongpin.FanghuyongpinAction" method="list">
+			<result name="success">/WEB-INF/jsp/fanghuyongpin/fanghuyongpinlist_view.jsp</result>
+		</action>
+		<action name="fanghuyongpininput" class="com.stanley.fanghuyongpin.FanghuyongpinAction" method="input">
+			<result name="success" type="redirectAction">fanghuyongpin</result>
+			<result name="input">/WEB-INF/jsp/fanghuyongpin/fanghuyongpinform.jsp</result>
+			<result name="edit">/WEB-INF/jsp/fanghuyongpin/fanghuyongpinedit.jsp</result>
+		</action>
+		<action name="fanghuyongpindict" class="com.stanley.fanghuyongpin.FanghuyongpinDictAction" method="list">
+			<result name="success">/WEB-INF/jsp/fanghuyongpin/fanghuyongpindictlist.jsp</result>
+		</action>
+		<action name="fanghuyongpindictinput" class="com.stanley.fanghuyongpin.FanghuyongpinDictAction" method="input">
+			<result name="success" type="redirectAction">fanghuyongpindict</result>
+			<result name="input">/WEB-INF/jsp/fanghuyongpin/fanghuyongpindictform.jsp</result>
+		</action>
+		
+		<action name="puchadan" class="com.stanley.pucha.PuchadanAction" method="list">
+			<result name="success">/WEB-INF/jsp/pucha/puchadanlist.jsp</result>
+		</action>
+		<action name="puchadaninput" class="com.stanley.pucha.PuchadanAction" method="input">
+			<result name="success" type="redirectAction">puchadan</result>
+			<result name="input">/WEB-INF/jsp/pucha/puchadanform.jsp</result>
+		</action>
+		
+		<action name="puchadetail" class="com.stanley.pucha.PuchaDetailAction" method="list">
+			<result name="success">/WEB-INF/jsp/pucha/puchadetaillist.jsp</result>
+			<result name="input">/WEB-INF/jsp/pucha/puchadetailform.jsp</result>
+		</action>
+		<action name="puchadetailv" class="com.stanley.pucha.PuchaDetailVAction" method="list">
+			<result name="success">/WEB-INF/jsp/pucha/puchadetailvlist.jsp</result>
+		</action>
+		<action name="puchadetail_view" class="com.stanley.pucha.PuchaDetailVAction" method="list">
+			<result name="success">/WEB-INF/jsp/pucha/puchadetaillist_view.jsp</result>
+		</action>
+		
+		
+		<action name="runningstatus" class="com.stanley.runningstatus.RunningStatusAction" method="list">
+			<result name="success">/WEB-INF/jsp/runningstatus/runningstatuslist.jsp</result>
+		</action>
+		<action name="youhuoyubao" class="com.stanley.youhuoyubao.YouhuoyubaoAction" method="list">
+			<result name="success">/WEB-INF/jsp/youhuoyubao/youhuoyubaolist.jsp</result>
+		</action>
+		<action name="youhuoyubao_view" class="com.stanley.youhuoyubao.YouhuoyubaoAction" method="list">
+			<result name="success">/WEB-INF/jsp/youhuoyubao/youhuoyubaolist_view.jsp</result>
+		</action>
+		<action name="youhuoyubaoinput" class="com.stanley.youhuoyubao.YouhuoyubaoAction" method="input">
+			<result name="success" type="redirectAction">youhuoyubao</result>
+			<result name="input">/WEB-INF/jsp/youhuoyubao/youhuoyubaoform.jsp</result>
+		</action>
+		
+		<action name="locomotivedict" class="com.stanley.locomotivedict.LocomotiveDictAction" method="list">
+			<result name="success">/WEB-INF/jsp/locomotivedict/locomotivedictlist.jsp</result>
+		</action>
+		<action name="locomotivedict_view" class="com.stanley.locomotivedict.LocomotiveDictAction" method="list">
+			<result name="success">/WEB-INF/jsp/locomotivedict/locomotivedictlist_view.jsp</result>
+		</action>
+		<action name="locomotivedictinput" class="com.stanley.locomotivedict.LocomotiveDictAction" method="input">
+			<result name="success" type="redirectAction">locomotivedict</result>
+			<result name="input">/WEB-INF/jsp/locomotivedict/locomotivedictform.jsp</result>
+		</action>
+		
+		<action name="trialitem" class="com.stanley.locotrial.TrialItemAction" method="list">
+			<result name="success">/WEB-INF/jsp/locotrial/trialitemlist.jsp</result>
+		</action>
+		<action name="trialiteminput" class="com.stanley.locotrial.TrialItemAction" method="input">
+			<result name="success" type="redirectAction">trialitem</result>
+			<result name="input">/WEB-INF/jsp/locotrial/trialitemform.jsp</result>
+		</action>
+		<action name="trialreport" class="com.stanley.locotrial.TrialReportAction" method="list">
+			<result name="success">/WEB-INF/jsp/locotrial/trialreportlist.jsp</result>
+		</action>
+		<action name="trialreportinput" class="com.stanley.locotrial.TrialReportAction" method="input">
+			<result name="success" type="redirectAction">trialreport</result>
+			<result name="input">/WEB-INF/jsp/locotrial/trialreportform.jsp</result>
+		</action>
+		
+		<action name="beipinrelease" class="com.stanley.beipin.BeipinReleaseAction" method="list">
+			<result name="success">/WEB-INF/jsp/beipin/beipinreleaselist.jsp</result>
+		</action>
+		<action name="beipin" class="com.stanley.beipin.BeipinAction" method="list">
+			<result name="success">/WEB-INF/jsp/beipin/beipinlist.jsp</result>
+		</action>
+		<action name="beipininput" class="com.stanley.beipin.BeipinAction" method="input">
+			<result name="success" type="redirectAction">beipin</result>
+			<result name="input">/WEB-INF/jsp/beipin/beipinform.jsp</result>
+		</action>
+		
+	</package>
+	
+
+</struts>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0//EN"   "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="newsPaper.name">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>刊名不能为空</message>
+		</field-validator>
+	</field>
+	<field name="newsPaper.date">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>日期不能为空</message>
+		</field-validator>
+	</field>
+	<field name="newsPaper.content">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>内容不能为空</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="maxLength">1200</param>
+			<message>内容最多600个汉字(或1200个字符)</message>
+		</field-validator>
+	</field>
+</validators>

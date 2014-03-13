@@ -1,0 +1,142 @@
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; BACKGROUND: #fff; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #000; PADDING-TOP: 0px; FONT-FAMILY: "宋体", arial; TEXT-ALIGN: left
+}
+.clear_both {
+	CLEAR: both
+}
+.float_left {
+	FLOAT: left
+}
+.float_right {
+	FLOAT: right
+}
+inptu {
+	MARGIN-BOTTOM: 5px
+}
+IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+DIV {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+FORM {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+UL {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; TEXT-INDENT: 2em; PADDING-TOP: 0px; LIST-STYLE-TYPE: none; BORDER-RIGHT-WIDTH: 0px
+}
+OL {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+LI {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; LIST-STYLE-POSITION: outside; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none; BORDER-RIGHT-WIDTH: 0px
+}
+A:link {
+	COLOR: #1f3a87; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #1f3a87; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #1f3a87; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #1f3a87
+}
+.Menu {
+	BORDER-RIGHT: #cbcbcb 1px solid; BORDER-TOP: #cbcbcb 1px solid; MARGIN: 0px auto; BORDER-LEFT: #cbcbcb 1px solid; WIDTH: 955px; BORDER-BOTTOM: #cbcbcb 1px solid; HEIGHT: 70px
+}
+.all {
+	CLEAR: both; MARGIN: 0px auto; WIDTH: 955px; PADDING-TOP: 0px; HEIGHT: auto; TEXT-ALIGN: left
+}
+.br {
+	FONT-SIZE: 1px; HEIGHT: 5px
+}
+.textx {
+	FLOAT: left; MARGIN-LEFT: 10px; WIDTH: auto; MARGIN-RIGHT: 10px
+}
+.text {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN-LEFT: 5px; WIDTH: auto; MARGIN-RIGHT: 5px; PADDING-TOP: 5px; HEIGHT: 10px
+}
+.text .inro {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: auto; PADDING-TOP: 0px
+}
+.text .t {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: 70px; PADDING-TOP: 0px; TEXT-ALIGN: right
+}
+.text .bd {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: auto; PADDING-TOP: 0px
+}
+.text .time {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: auto; PADDING-TOP: 0px
+}
+.blank {
+	FLOAT: left; WIDTH: 10px
+}
+.tilel4 {
+	PADDING-RIGHT: 20px; BACKGROUND-POSITION: center 50%; PADDING-LEFT: 20px; FONT-WEIGHT: bolder; FONT-SIZE: 14px; FLOAT: left; MARGIN: 0px auto; WIDTH: auto; BACKGROUND-REPEAT: no-repeat; HEIGHT: auto; TEXT-ALIGN: left
+}
+.tilel42 {
+	BACKGROUND-POSITION: center 50%; FONT-WEIGHT: bolder; FONT-SIZE: 14px; FLOAT: left; MARGIN: 0px auto; WIDTH: auto; BACKGROUND-REPEAT: no-repeat; HEIGHT: auto; TEXT-ALIGN: left
+}
+.tilel4f {
+	PADDING-RIGHT: 20px; BACKGROUND-POSITION: center 50%; PADDING-LEFT: 20px; FONT-SIZE: 14px; FLOAT: left; MARGIN: 0px auto; WIDTH: auto; BACKGROUND-REPEAT: no-repeat; HEIGHT: auto; TEXT-ALIGN: left
+}
+.tilel2f {
+	PADDING-RIGHT: 20px; BACKGROUND-POSITION: center 50%; PADDING-LEFT: 20px; FONT-SIZE: 12px; FLOAT: left; MARGIN: 0px auto; WIDTH: auto; BACKGROUND-REPEAT: no-repeat; HEIGHT: auto; TEXT-ALIGN: left
+}
+.tilel2f2 {
+	BACKGROUND-POSITION: center 50%; FONT-SIZE: 12px; FLOAT: left; MARGIN: 0px auto; WIDTH: auto; COLOR: #000000; BACKGROUND-REPEAT: no-repeat; HEIGHT: auto; TEXT-ALIGN: left
+}
+.tilel2wr {
+	PADDING-RIGHT: 20px; BACKGROUND-POSITION: center 50%; PADDING-LEFT: 20px; FONT-SIZE: 12px; FLOAT: left; MARGIN: 0px auto; WIDTH: auto; COLOR: #ffffff; BACKGROUND-REPEAT: no-repeat; HEIGHT: auto; TEXT-ALIGN: center
+}
+.tilel3wr {
+	PADDING-RIGHT: 20px; BACKGROUND-POSITION: center 50%; PADDING-LEFT: 20px; FONT-SIZE: 12px; FLOAT: right; BACKGROUND-IMAGE: url(images/but_03.gif); MARGIN: 3px auto; WIDTH: 50px; COLOR: #ffffff; BACKGROUND-REPEAT: no-repeat; HEIGHT: auto; TEXT-ALIGN: center
+}
+.tilel2 {
+	PADDING-RIGHT: 20px; BACKGROUND-POSITION: center 50%; PADDING-LEFT: 20px; FONT-WEIGHT: bolder; FONT-SIZE: 12px; FLOAT: left; MARGIN: 0px auto; WIDTH: auto; BACKGROUND-REPEAT: no-repeat; HEIGHT: auto; TEXT-ALIGN: left
+}
+.login .name1 {
+	FLOAT: left; WIDTH: 60px; PADDING-TOP: 3px; TEXT-ALIGN: right
+}
+.login .redstar {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; FLOAT: left; WIDTH: 10px; COLOR: #ff0000; MARGIN-RIGHT: 3px; PADDING-TOP: 3px; TEXT-ALIGN: right
+}
+.login .input {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 5px; FONT-SIZE: 12px; FLOAT: left; MARGIN: 0px auto; WIDTH: auto; PADDING-TOP: 3px; HEIGHT: auto; TEXT-ALIGN: left
+}
+.login .input1 {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 12px; FLOAT: left; WIDTH: auto; TEXT-ALIGN: left
+}
+.login .into {
+	PADDING-LEFT: 5px; FONT-SIZE: 12px; FLOAT: left; WIDTH: auto; LINE-HEIGHT: 1.5; PADDING-TOP: 5px; TEXT-ALIGN: left
+}
+.login .choice {
+	PADDING-LEFT: 5px; FONT-SIZE: 12px; FLOAT: left; MARGIN-LEFT: 10px; VERTICAL-ALIGN: middle; WIDTH: 130px; TEXT-ALIGN: left
+}
+.login .choice1 {
+	PADDING-LEFT: 0px; FONT-SIZE: 12px; FLOAT: left; WIDTH: 98px; TEXT-ALIGN: left
+}
+.login .choice2 {
+	PADDING-LEFT: 0px; FONT-SIZE: 12px; FLOAT: left; WIDTH: 100px; TEXT-ALIGN: left
+}
+.passport {
+	CLEAR: both; MARGIN: 0px auto; WIDTH: 955px; HEIGHT: 35px
+}
+.passport .s1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 5px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 11px
+}
+.passport .s2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 5px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 7px; TEXT-ALIGN: center
+}
+.passport .s2 INPUT {
+	BORDER-RIGHT: #000 1px solid; BORDER-TOP: #000 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #000 1px solid; WIDTH: 50px; BORDER-BOTTOM: #000 1px solid
+}
+.passport .s2 SELECT {
+	FONT-SIZE: 12px; WIDTH: 88px
+}
+.passport .s3 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 2px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 5px
+}
+

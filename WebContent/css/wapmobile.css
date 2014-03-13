@@ -1,0 +1,273 @@
+.clear_both {
+	FONT-SIZE: 1px; LINE-HEIGHT: 1px; HEIGHT: 1px
+}
+.mlinesezrchlist {
+	BACKGROUND: url(images/mcustom_bg.jpg) left top
+}
+.mheader {
+	BACKGROUND: url(images/mobile_title_bg.jpg) repeat-x left top; HEIGHT: 41px
+}
+.m_main {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; PADDING-TOP: 6px
+}
+.m_logout {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 6px
+}
+.m_title {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 51px; PADDING-BOTTOM: 0px; PADDING-TOP: 10px
+}
+.mlogin {
+	MARGIN-TOP: 12px; WIDTH: 320px; HEIGHT: 368px; BACKGROUND-COLOR: #000
+}
+.mlogin_title {
+	TEXT-ALIGN: center
+}
+.mlogin_cont {
+	MARGIN-TOP: 18px; BACKGROUND: url(images/mlogin_bg.jpg) no-repeat left bottom; WIDTH: 320px; PADDING-TOP: 31px; HEIGHT: 290px
+}
+.mlogin_arow {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 60px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.mlogin_font01 {
+	FONT-SIZE: 15px; VERTICAL-ALIGN: middle; COLOR: #fff; LINE-HEIGHT: 30px
+}
+.mem_nbs {
+	PADDING-LEFT: 4px
+}
+.mlogin_btn {
+	BACKGROUND: url(images/mlogin_btn_bg.png) no-repeat left bottom; HEIGHT: 96px
+}
+.mlogin_footer {
+	PADDING-TOP: 4px; TEXT-ALIGN: center
+}
+.mdingzhi {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 16px; FONT-SIZE: 12px; BACKGROUND: url(images/mdingzhi_bg02.jpg) #000 no-repeat right bottom; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: middle; WIDTH: 304px; COLOR: #ccc; PADDING-TOP: 10px; HEIGHT: 370px; TEXT-ALIGN: center
+}
+.mdingzhi_nbs {
+	MARGIN-LEFT: 20px
+}
+.mdingzhi A:link {
+	COLOR: #ccc
+}
+.mdingzhi A:visited {
+	COLOR: #ccc
+}
+.mdingzhi A:hover {
+	COLOR: #ccc
+}
+.mvideolist {
+	WIDTH: 320px; BACKGROUND-COLOR: #111
+}
+.m_title02 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; PADDING-BOTTOM: 8px; PADDING-TOP: 8px; BORDER-BOTTOM: #222222 1px solid
+}
+.msearch {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 9px; PADDING-TOP: 11px
+}
+.msearch_font {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 20px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.movie01_aline {
+	PADDING-RIGHT: 8px; BORDER-TOP: #333 1px solid; PADDING-LEFT: 8px; PADDING-BOTTOM: 9px; PADDING-TOP: 9px; BORDER-BOTTOM: #000 1px solid; HEIGHT: 45px; BACKGROUND-COLOR: #222
+}
+.aline_img {
+	MARGIN-RIGHT: 10px
+}
+.aline_img IMG {
+	BORDER-RIGHT: #000 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #000 1px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; BORDER-LEFT: #000 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #000 1px solid
+}
+.aline_title A:link {
+	FONT-SIZE: 14px; VERTICAL-ALIGN: middle; COLOR: #fff; LINE-HEIGHT: 24px
+}
+.aline_title A:visited {
+	FONT-SIZE: 14px; VERTICAL-ALIGN: middle; COLOR: #fff; LINE-HEIGHT: 24px
+}
+.aline_title A:hover {
+	FONT-SIZE: 14px; VERTICAL-ALIGN: middle; COLOR: #fff; LINE-HEIGHT: 24px
+}
+.aline_cont01 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; COLOR: #3083e1; LINE-HEIGHT: 21px
+}
+.aline_cont01 .movie01_font01 {
+	COLOR: #bbb
+}
+.aline_cont01 .movie01_font02 {
+	COLOR: #fff
+}
+.mvideogetonedata {
+	WIDTH: 320px; BACKGROUND-COLOR: #222
+}
+.movie02 {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 0px; MARGIN: 10px 0px 0px; PADDING-TOP: 0px
+}
+.movie02_title A:link {
+	FONT-SIZE: 16px; VERTICAL-ALIGN: middle; COLOR: #fff; LINE-HEIGHT: 26px; PADDING-TOP: 5px
+}
+.movie02_title A:visited {
+	FONT-SIZE: 16px; VERTICAL-ALIGN: middle; COLOR: #fff; LINE-HEIGHT: 26px; PADDING-TOP: 5px
+}
+.movie02_title A:hover {
+	FONT-SIZE: 16px; VERTICAL-ALIGN: middle; COLOR: #fff; LINE-HEIGHT: 26px; PADDING-TOP: 5px
+}
+.movie02_cont {
+	MARGIN-TOP: 12px; FONT-SIZE: 13px; VERTICAL-ALIGN: middle; COLOR: #bbb; LINE-HEIGHT: 22px
+}
+.mfooter {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 10px; BACKGROUND: url(images/movie02_bg.jpg) repeat-x left top; PADDING-BOTTOM: 0px; MARGIN: 8px 0px 0px; VERTICAL-ALIGN: middle; LINE-HEIGHT: 36px; PADDING-TOP: 0px; HEIGHT: 36px
+}
+.mfooter_font {
+	FONT-SIZE: 13px; COLOR: #999
+}
+.mfooter_font SPAN {
+	COLOR: #fff
+}
+.mfooter_btn {
+	PADDING-TOP: 6px
+}
+.mcustom_list {
+	BACKGROUND: url(images/mguizhang_bg.jpg) no-repeat left bottom; WIDTH: 320px; HEIGHT: 380px
+}
+.mcustom_img {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 17px; PADDING-BOTTOM: 0px; PADDING-TOP: 4px; HEIGHT: 47px
+}
+.mcustom_detail {
+	BACKGROUND: url(images/mcustom_bg.jpg) repeat-y left top; WIDTH: 320px
+}
+.mcustom_title {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 11px; PADDING-BOTTOM: 8px; PADDING-TOP: 9px
+}
+.mcustom_cont A:link {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 14px; FONT-SIZE: 14px; PADDING-BOTTOM: 10px; VERTICAL-ALIGN: middle; COLOR: #000; LINE-HEIGHT: 24px; PADDING-TOP: 0px
+}
+.mcustom_cont A:visited {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 14px; FONT-SIZE: 14px; PADDING-BOTTOM: 10px; VERTICAL-ALIGN: middle; COLOR: #000; LINE-HEIGHT: 24px; PADDING-TOP: 0px
+}
+.mcustom_cont A:hover {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 14px; FONT-SIZE: 14px; PADDING-BOTTOM: 10px; VERTICAL-ALIGN: middle; COLOR: #000; LINE-HEIGHT: 24px; PADDING-TOP: 0px
+}
+.msuoyin {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 11px; PADDING-BOTTOM: 0px; PADDING-TOP: 12px
+}
+.msuoyin .msuoyin_font {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 14px; BACKGROUND: url(images/mline.gif) repeat-x left bottom; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.msuoyin_cont {
+	PADDING-RIGHT: 11px; PADDING-LEFT: 11px; FONT-SIZE: 13px; PADDING-BOTTOM: 10px; VERTICAL-ALIGN: middle; LINE-HEIGHT: 23px; PADDING-TOP: 10px
+}
+.result_cont {
+	BORDER-RIGHT: #aacbee 1px solid; PADDING-RIGHT: 13px; BORDER-TOP: #aacbee 1px solid; PADDING-LEFT: 13px; PADDING-BOTTOM: 7px; MARGIN: 12px 0px 0px 10px; BORDER-LEFT: #aacbee 1px solid; WIDTH: 272px; PADDING-TOP: 7px; BORDER-BOTTOM: #aacbee 1px solid; BACKGROUND-COLOR: #f8fcff
+}
+.mobile_img {
+	MARGIN: 10px; BACKGROUND-COLOR: #fff
+}
+.mlist {
+	BORDER-RIGHT: #aacbee 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #aacbee 1px solid; PADDING-LEFT: 10px; FONT-SIZE: 14px; PADDING-BOTTOM: 10px; MARGIN: 10px 0px 10px 10px; VERTICAL-ALIGN: middle; BORDER-LEFT: #aacbee 1px solid; WIDTH: 278px; LINE-HEIGHT: 24px; PADDING-TOP: 10px; BORDER-BOTTOM: #aacbee 1px solid; BACKGROUND-COLOR: #f8fcff
+}
+.mlist A:link {
+	COLOR: #000
+}
+.mlist A:visited {
+	COLOR: #000
+}
+.mlist A:hover {
+	COLOR: #000
+}
+.mlist_bg {
+	MIN-HEIGHT: 380px; BACKGROUND: url(images/mbg.jpg) no-repeat left bottom; HEIGHT: 100%
+}
+.mtrainsearch {
+	BACKGROUND: url(images/mlieche_bg.jpg) no-repeat left top; WIDTH: 320px; HEIGHT: 380px
+}
+.mtrainsearch_title {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; MARGIN-BOTTOM: 11px; PADDING-BOTTOM: 10px; PADDING-TOP: 8px
+}
+.mtrainsearch_title02 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 25px; MARGIN-BOTTOM: 15px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.mtrainsearch_cont {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 42px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.mtrainsearch_title03 {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 5px
+}
+.mtrainsearch_btn {
+	MARGIN-TOP: 15px; TEXT-ALIGN: center
+}
+.result_cont02 {
+	BORDER-RIGHT: #aacbee 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #aacbee 1px solid; PADDING-LEFT: 3px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 7px 10px 15px; WORD-SPACING: normal; VERTICAL-ALIGN: middle; BORDER-LEFT: #aacbee 1px solid; WIDTH: 581px; COLOR: #505559; LINE-HEIGHT: 24px; PADDING-TOP: 5px; BORDER-BOTTOM: #aacbee 1px solid; BACKGROUND-COLOR: #f8fcff
+}
+.result_title {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #fff; WHITE-SPACE: nowrap; BACKGROUND-COLOR: #599de9
+}
+.result_bg01 TD {
+	BORDER-BOTTOM: #b5d7ff 1px solid
+}
+.result_bg02 TD {
+	BORDER-BOTTOM: #b5d7ff 1px solid
+}
+.result_bg02 TD {
+	BACKGROUND-COLOR: #dfebfe
+}
+.time_cont {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: middle; COLOR: #333; LINE-HEIGHT: 22px; PADDING-TOP: 10px
+}
+.time_cont SPAN {
+	FONT-WEIGHT: bold; COLOR: #039
+}
+.mhyyf_list {
+	BACKGROUND: url(images/mhyyf_bg.jpg) no-repeat left bottom; WIDTH: 320px; HEIGHT: 380px
+}
+.mhyyf_zc {
+	BACKGROUND: url(images/mhyyf_zc_bg.jpg) no-repeat left top; WIDTH: 320px; HEIGHT: 460px
+}
+.cyyf_cz_cont {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 8px 0px 0px 11px; VERTICAL-ALIGN: middle; WIDTH: 295px; COLOR: #039; LINE-HEIGHT: 26px; PADDING-TOP: 0px
+}
+.fare_subheadering {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: middle; COLOR: #039; LINE-HEIGHT: 23px; PADDING-TOP: 0px; HEIGHT: 23px; BACKGROUND-COLOR: #d6e5f0
+}
+.fare_arow {
+	BACKGROUND-COLOR: #f4f8fb
+}
+.mhyyf_btn {
+	MARGIN-TOP: 5px; TEXT-ALIGN: center
+}
+.mhyyf_zc_title {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; PADDING-BOTTOM: 8px; PADDING-TOP: 8px
+}
+.mhyyf_ld {
+	BACKGROUND: url(images/mhyyf_ld_bg.jpg) no-repeat left top; WIDTH: 320px; HEIGHT: 380px
+}
+.mhyyf_jzx {
+	BACKGROUND: url(images/mhyyf_jzx_bg.jpg) no-repeat left top; WIDTH: 320px; HEIGHT: 380px
+}
+.mmap {
+	BORDER-RIGHT: #000 5px solid; MIN-HEIGHT: 320px; WIDTH: 30px; POSITION: relative; HEIGHT: 100%
+}
+.mmap_cz {
+	BORDER-RIGHT: #000 5px solid; BORDER-TOP: #000 5px solid; MIN-HEIGHT: 310px; BORDER-LEFT: #000 5px solid; WIDTH: 183px; BORDER-BOTTOM: #000 5px solid; POSITION: relative; HEIGHT: 100%; BACKGROUND-COLOR: #fff
+}
+.mmap_yw {
+	BORDER-RIGHT: #000 5px solid; BORDER-TOP: #000 5px solid; MIN-HEIGHT: 310px; BORDER-LEFT: #000 5px solid; WIDTH: 183px; BORDER-BOTTOM: #000 5px solid; POSITION: relative; HEIGHT: 100%; BACKGROUND-COLOR: #fff
+}
+.mmap_tielu {
+	BORDER-RIGHT: #000 5px solid; BORDER-TOP: #000 5px solid; MIN-HEIGHT: 310px; BORDER-LEFT: #000 5px solid; WIDTH: 183px; BORDER-BOTTOM: #000 5px solid; POSITION: relative; HEIGHT: 100%; BACKGROUND-COLOR: #fff
+}
+.mmap_czimg {
+	LEFT: -30px; POSITION: absolute; TOP: 64px
+}
+.mmap_ywimg {
+	LEFT: -30px; POSITION: absolute; TOP: 143px
+}
+.mmap_tieluimg {
+	LEFT: -30px; POSITION: absolute; TOP: 222px
+}
+.mmap_font01 {
+	FONT-SIZE: 14px; VERTICAL-ALIGN: middle; LINE-HEIGHT: 25px
+}
+.mmap_font02 {
+	PADDING-RIGHT: 5px; MARGIN-TOP: 20px; PADDING-LEFT: 5px; FONT-SIZE: 13px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: middle; LINE-HEIGHT: 24px; PADDING-TOP: 0px
+}
+.mmap_font03 {
+	PADDING-RIGHT: 0px; OVERFLOW-Y: scroll; PADDING-LEFT: 10px; FONT-SIZE: 12px; PADDING-BOTTOM: 10px; VERTICAL-ALIGN: middle; LINE-HEIGHT: 20px; PADDING-TOP: 10px; HEIGHT: 285px
+}

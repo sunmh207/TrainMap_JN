@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC   "-//Hibernate/Hibernate Mapping DTD 3.0//EN"    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.stanley">
+	<class name="com.stanley.Gudao" table="GUDAO">
+		<id name="id" type="string" unsaved-value="null">
+			<column name="id" sql-type="varchar(32)" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="lastUpdate" column="last_update" />
+		<property name="gdName" column="gd_name" />
+		<property name="x" column="x" />
+		<property name="y" column="y" />
+		<property name="CH" column="CH" />
+		<property name="didian" column="didian" />
+		<!-- <property name="loconumberCode" column="loconumber_code" /> -->
+	</class>
+	<class name="com.stanley.JicheYunxingInfo" table="JICHEYUNXING_INFO">
+		<id name="id" type="string" unsaved-value="null">
+			<column name="id" sql-type="varchar(32)" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="CH" column="CH" />
+		<property name="driver" column="driver" />
+		<property name="driver2" column="driver2" />
+		<property name="startTime" column="start_time" />
+		<property name="startStation" column="start_station" />
+		<property name="endTime" column="end_time" />
+		<property name="endStation" column="end_station" />
+		<property name="note" column="note" />
+		<!-- <property name="loconumberCode" column="loconumber_code" /> -->
+	</class>
+	
+	
+	<class name="com.stanley.TaiWei" table="TAIWEI_V">
+		<id name="id" type="string" unsaved-value="null">
+			<column name="id" sql-type="varchar(32)" />
+		</id>
+		<property name="gdName" column="gd_name" />
+		<property name="x" column="x" />
+		<property name="y" column="y" />
+		<property name="currentCH" column="CH" />
+		<property name="currentDriver" column="Driver" />
+		<property name="currentDriver2" column="Driver2" />
+		<property name="startTime" column="start_Time" />
+		<property name="startStation" column="start_Station" />
+		<property name="endTime" column="end_Time" />
+		<property name="endStation" column="end_Station" />
+		<property name="lastUpdate" column="last_Update" />
+		<property name="note" column="note" />
+		<property name="hasIssue" column="hasIssue" />
+		<property name="issueContent" column="issue_content" />
+		<!-- <property name="loconumberCode" column="loconumber_code" /> -->
+		<property name="didian" column="didian" />
+	</class>
+	
+	<class name="com.stanley.TaiWeiAll" table="TAIWEI_ALL_V">
+		<id name="id" type="string" unsaved-value="null">
+			<column name="id" sql-type="varchar(32)" />
+		</id>
+		<property name="gdName" column="gd_name" />
+		<property name="x" column="x" />
+		<property name="y" column="y" />
+		<property name="currentCH" column="CH" />
+		<property name="currentDriver" column="Driver" />
+		<property name="currentDriver2" column="Driver2" />
+		<property name="startTime" column="start_Time" />
+		<property name="startStation" column="start_Station" />
+		<property name="endTime" column="end_Time" />
+		<property name="endStation" column="end_Station" />
+		<property name="lastUpdate" column="last_Update" />
+		<property name="note" column="note" />
+		<property name="didian" column="didian" />
+	</class>
+	
+	<class name="com.stanley.qry.GudaoHistory" table="Gudao_History">
+		<id name="id" type="string" unsaved-value="null">
+			<column name="id" sql-type="varchar(32)" />
+		</id>
+		<property name="gdName" column="gd_name" />
+		<property name="x" column="x" />
+		<property name="y" column="y" />
+		<property name="ch" column="CH" />
+		<property name="didian" column="didian" />
+	</class>
+	<!-- <class name="com.stanley.jichezhuangtai.Jichezhuangtai" table="jichezhuangtai_info">
+		<id name="id" type="string" unsaved-value="null">
+			<column name="id" sql-type="varchar(32)" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="ch" column="ch" />
+		<property name="type" column="type" />
+		<property name="content" column="content" />
+		<property name="submitPerson" column="submit_person" />
+		<property name="submitTime" column="submit_time" />
+		<property name="submitDept" column="submit_dept" />
+		<property name="isLast" column="is_last" />
+	</class> -->
+	<class name="com.stanley.fanghuyongpin.Fanghuyongpin" table="fanghuyongpin">
+		<id name="id" type="string" unsaved-value="null">
+			<column name="id" sql-type="varchar(32)" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="ch" column="ch" />
+		<property name="ypName" column="yp_name" />
+		<property name="setupTime" column="setup_time" />
+		<property name="changeTime" column="change_time" />
+		<property name="changePerson" column="change_person" />
+		<property name="issueDate" column="issue_date" />
+		<property name="note" column="note" />
+		<property name="quantity" column="quantity" />
+		<property name="isChanged" column="is_changed" />
+	</class>
+	<class name="com.stanley.fanghuyongpin.FanghuyongpinDict" table="fanghuyongpin_dict">
+		<id name="id" type="string" unsaved-value="null">
+			<column name="id" sql-type="varchar(32)" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="ypName" column="yp_name" />
+		<property name="duration" column="duration" />
+		<property name="locomodel" column="locomodel" />
+		<property name="note" column="note" />
+	</class>
+	<class name="com.stanley.pucha.Puchadan" table="puchadan">
+		<id name="id" type="string" unsaved-value="null">
+			<column name="id" sql-type="varchar(32)" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="chs" column="chs" />
+		<property name="doneTime" column="done_time" />
+		<property name="faqiDept" column="faqi_dept" />
+		<property name="faqiPerson" column="faqi_person" />
+		<property name="isDone" column="is_done" />
+		<property name="items" column="items" />
+		<property name="puchaName" column="pucha_name" />
+		<property name="puchaTime" column="pucha_time" />
+	</class>
+	<class name="com.stanley.pucha.PuchaDetail" table="pucha_detail">
+		<id name="id" type="string" unsaved-value="null">
+			<column name="id" sql-type="varchar(32)" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="puchadanId" column="puchadan_id" />
+		<property name="ch" column="ch" />
+		<property name="item" column="item" />
+		<property name="isDone" column="is_done" />
+		<property name="puchaPerson" column="pucha_person" />
+		<property name="puchaTime" column="pucha_time" />
+	</class>
+	<class name="com.stanley.pucha.PuchaDetailV" table="pucha_detail_v">
+		<id name="puchadetailId" type="string" unsaved-value="null"> 
+			<column name="puchadetail_id" sql-type="varchar(32)" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="puchadanId" column="puchadan_id" />
+		<property name="chs" column="chs" />
+		<property name="puchadan_doneTime" column="puchadan_done_time" />
+		<property name="faqiDept" column="faqi_dept" />
+		<property name="faqiPerson" column="faqi_person" />
+		<property name="puchadan_isDone" column="puchadan_is_done" />
+		<property name="items" column="items" />
+		<property name="puchaName" column="pucha_name" />
+		<property name="puchadan_puchaTime" column="puchadan_pucha_time" />
+		
+		<property name="ch" column="ch" />
+		<property name="item" column="item" />
+		<property name="puchadetail_isDone" column="puchadetail_is_done" />
+		<property name="puchaPerson" column="pucha_person" />
+		<property name="puchadetail_puchaTime" column="puchadetail_pucha_time" /> 
+	</class>
+	
+	<!-- 2012-11-21 -->
+	<!-- <class name="com.stanley.runningstatus.RunningStatus" table="LKJ_RUNNINGSTATE">
+		<id name="ID" type="string" unsaved-value="null">
+			<column name="ID" sql-type="varchar(32)" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="Info_ID" column="INFO_ID" />
+		<property name="train" column="train" />
+		<property name="locomotive" column="locomotive" />
+		<property name="drivercode" column="drivercode" />
+		<property name="drivername" column="drivername" />
+		<property name="vicedrivercode" column="vicedrivercode" />
+		<property name="vicedrivername" column="vicedrivername" />
+		<property name="status" column="status" />
+		<property name="statustimer" column="statustimer" />
+		<property name="site" column="site" />
+		<property name="sitecode" column="sitecode" />
+		<property name="other" column="other" />
+		<property name="processing_time" column="processing_time" />
+		<property name="ljk_filename" column="ljk_filename" />
+		<property name="linecode" column="linecode" />
+	</class> -->
+	
+	<class name="com.stanley.youhuoyubao.Youhuoyubao" table="YOUHUOYUBAO">
+		<id name="id" type="string" unsaved-value="null">
+			<column name="id" sql-type="varchar(32)" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="ch" column="ch" />
+		<property name="reportTime" column="report_time" />
+		<property name="needShow" column="need_show" />
+		<property name="content" column="content" />
+		<property name="reporter" column="reporter" />
+		<property name="expireTime" column="expire_time" />
+		<property name="sysTime" column="sys_time" />
+		<property name="processType" column="process_type" />
+		<property name="infoType" column="info_type" />
+	</class>
+	
+	<class name="com.stanley.locomotivedict.Locomotive" table="LOCOMOTIVE_DICT">
+		<id name="id" type="string" unsaved-value="null">
+			<column name="id" sql-type="varchar(32)" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="locomodel" column="locomedel" />
+		<property name="loconumber" column="loconumber" />
+		<property name="other" column="other" />
+		<!-- <property name="ismanager" column="ismanager" /> -->
+		<property name="didian" column="didian" />
+		<property name="loconumberCode" column="loconumber_code" />
+	</class>
+	<class name="com.stanley.locomotivedict.AvailableLocomotiveV" table="Available_LOCOMOTIVE_V">
+		<id name="id" type="string" unsaved-value="null">
+			<column name="id" sql-type="varchar(32)" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="locomodel" column="locomedel" />
+		<property name="loconumber" column="loconumber" />
+		<property name="other" column="other" />
+		<property name="didian" column="didian" />
+		<property name="loconumberCode" column="loconumber_code" />
+	</class>
+	
+	 <class name="com.stanley.locotrial.TrialItem" table="Trial_Item">
+		<id name="id" type="string" unsaved-value="null">
+			<column name="id" sql-type="varchar(32)" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="trialName" column="trial_name" />
+		<property name="trialContent" column="trial_content" />
+		<property name="requirement" column="requirement" />
+		<property name="locomodel" column="locomodel" />
+	</class>
+	<class name="com.stanley.locotrial.TrialReport" table="Trial_Report">
+		<id name="id" type="string" unsaved-value="null">
+			<column name="id" sql-type="varchar(32)" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="trialDate" column="trial_date" />
+		<property name="ch" column="ch" />
+		<property name="person" column="person" />
+		<property name="trialName" column="trial_name" />
+		<property name="trialContent" column="trial_content" />
+		<property name="requirement" column="requirement" />
+		<property name="locomodel" column="locomodel" />
+		<property name="pass" column="pass" />
+	</class> 
+	<class name="com.stanley.beipin.BeipinRelease" table="Beipin">
+		<id name="id" type="string" unsaved-value="null">
+			<column name="id" sql-type="varchar(32)" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="getTime" column="GET_TIME" />
+		<property name="getPerson" column="GET_PERSON" />
+		<property name="ch" column="CH" />
+		<property name="beipinName" column="BEIPIN_NAME" />
+		<property name="recipient" column="recipient" />
+		<property name="receiveTime" column="receive_time" />
+		<property name="isOK" column="IS_OK" />
+		<property name="returnPerson" column="RETURN_PERSON" />
+		<property name="returnTime" column="RETURN_TIME" />
+		<property name="issueType" column="ISSUE_TYPE" />
+		<property name="hasReceipts" column="HAS_receipts" />
+		<property name="isDone" column="IS_DONE" />
+		<property name="getMode" column="GET_MODE" />
+		<property name="batch" column="BATCH" />
+		<property name="getPersoncode" column="GET_PERSONCODE" />
+		<property name="returnPersoncode" column="RETURN_PERSONCODE" />
+		<property name="note" column="note" />
+	</class>
+	<class name="com.stanley.beipin.Beipin" table="Beipin_dict">
+		<id name="id" type="string" unsaved-value="null">
+			<column name="id" sql-type="varchar(32)" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="beipinName" column="BEIPIN_NAME" />
+		<property name="issueType" column="ISSUE_TYPE" />
+		<property name="locomodel" column="locomodel" />
+		<property name="note" column="note" />
+	</class>
+</hibernate-mapping>
