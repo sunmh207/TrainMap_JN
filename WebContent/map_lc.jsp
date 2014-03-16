@@ -26,9 +26,9 @@ var jsonrpc = new JSONRpcClient("JSON-RPC");
 
 </HEAD>
  
-<BODY topmargin="0" leftmargin="0" style="background-color:#000099;">
+<BODY topmargin="0" leftmargin="0" style="background-color:022161;">
 <div align="center" >
-	<div id="map" style="width:1024px;height:512px;background-color:000099;border-style:none;"></div>
+	<div id="map" style="width:1024px;height:512px;background-color:022161;border-style:none;"></div>
 	<div id="alert" style="display:none;position:fixed;TEXT-ALIGN:center;left:0;top:150;height:200;width:100%;z-index:1000000;font-size: 50px; border:1 solid red;background-color:red;">后台数据没有更新！</div>
 </div>
 <script language="JavaScript">
@@ -123,13 +123,13 @@ function AmoyMapType() {
 }
 MapModel.mapTypes = new Array(new AmoyMapType());
 //MapModel.maxZoomLevel=3;
-MapModel.maxZoomLevel=1;
+MapModel.maxZoomLevel=2;
 
 var mapbuilder = new MapBuilder($("map"));
 //mapbuilder.outputMap(new Point(0, 0), 2);
 mapbuilder.outputMap(new Point(0, 0), 1);
 // 滑块工具
-//mapbuilder.addTool(MapBuilder.TOOL_SLIDERBAR); 
+mapbuilder.addTool(MapBuilder.TOOL_SLIDERBAR); 
 // 地图类型工具
 //mapbuilder.addTool(MapBuilder.TOOL_MAPTYPE);
 //foot 信息
@@ -142,14 +142,14 @@ var map = mapbuilder.getMap();
 window.setInterval(_refreshMarker(map),5000);
 //refreshMarker(map);
 // 在地图上加入双击事件
-MapEvent.addListener(map, MapEvent.DBLCLICK, function(e) {
+/* MapEvent.addListener(map, MapEvent.DBLCLICK, function(e) {
 	var coord = MapEvent.getEventCoord(e, map);
 	//alert(coord.toString());
 	var marker = new Marker(coord.getPoint(), Marker.TRAIN_GREEN_SMALL);
 	map.addOverlay(marker);
   	//alert(coord.x/1e16+":"+coord.y/1e16);
 	marker.setInfo("车号:T000 &nbsp; 车道:D000<br> 司机：张三&nbsp; 副司机:李四 <br>位置:"+coord.x/1e16+","+coord.y/1e16);
-});
+}); */
 //-->
 </SCRIPT>
 </BODY>

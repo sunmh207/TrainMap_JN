@@ -13,6 +13,7 @@ public class TaiWeiAll implements Serializable{
 	private String x;
 	private String y;
 	private String currentCH;
+	private String loconumberCode;//车号缩位编码
 	private String currentDriver;
 	private String currentDriver2;
 	private String startTime;
@@ -21,6 +22,8 @@ public class TaiWeiAll implements Serializable{
 	private String endStation;
 	private String lastUpdate;
 	private String note;
+	private String hasIssue;//有货预报里有记录，并且没有过期
+	private String issueContent;//有货预报内容
 	private String didian;//地点
 	
 	public String getId() {
@@ -108,7 +111,30 @@ public class TaiWeiAll implements Serializable{
 	public void setDidian(String didian) {
 		this.didian = didian;
 	}
-	public String toString(){
+	
+	public String getLoconumberCode() {
+		return loconumberCode;
+	}
+	public void setLoconumberCode(String loconumberCode) {
+		this.loconumberCode = loconumberCode;
+	}
+	
+	public String getHasIssue() {
+		return hasIssue;
+	}
+	public void setHasIssue(String hasIssue) {
+		this.hasIssue = hasIssue;
+	}
+	public String getIssueContent() {
+		return issueContent;
+	}
+	public void setIssueContent(String issueContent) {
+		this.issueContent = issueContent;
+	}
+	/*public String toString(){
 		return this.getGdName()+"|"+this.getX()+"|"+this.getY()+"|"+this.getCurrentCH()+"|"+this.getCurrentDriver()+"|"+this.getCurrentDriver2()+"|"+this.getStartTime()+"|"+this.getStartStation()+"|"+this.getEndTime()+"|"+this.getEndStation()+"|"+this.getNote();
+	}*/
+	public String toString(){
+		return this.getGdName()+"|"+this.getX()+"|"+this.getY()+"|"+this.getLoconumberCode()+"|"+this.getCurrentDriver()+"|"+this.getCurrentDriver2()+"|"+this.getStartTime()+"|"+this.getStartStation()+"|"+this.getEndTime()+"|"+this.getEndStation()+"|"+this.getNote()+"|"+this.getHasIssue()+"|"+this.getIssueContent();
 	}
 }

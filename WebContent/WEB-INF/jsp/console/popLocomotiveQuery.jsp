@@ -97,7 +97,7 @@ function forSelectAll(){
 <form id="searchForm" method="post" onsubmit="saveCheck()">
  <input type="hidden" name="act"/>
 <div  style="float: left; padding:0px 20px;top:1px;position:fixed;background-color:#F3F3F3;">
-	车间<s:select  name="qryCX" list="cxMap"/> 
+	车间<s:select  name="qryCX" list="cxMap" headerKey="" headerValue=""/> 
 	车号<input name="qryCH" value='${qryCH}' size="10">
 	<input type="submit" value="搜索" class="button">  <input type="button" value=" 确定 " onclick="forSel()" class="button"/>
 
@@ -124,12 +124,13 @@ function forSelectAll(){
 				<input type="<%=single?"radio":"checkbox"%>" name="chk" value="${locomotive.id}" id="chk_${locomotive.id}" 	<%if(single)out.print("onchange='forSel()'");%>>
 			</td>
 			<td align="left" class='td_body'>${locomotive.locomodel}</td>
-			<td align="left" class='td_body'>${locomotive.loconumber}</td>
+			
 			<td align="left" class='td_body' id="td_${locomotive.loconumber}">
 				<label for="chk_${locomotive.id}" id="lb_${locomotive.id}">${locomotive.loconumber}</label>
 			</td>
 			
 			<td align="left" class='td_body'>${locomotive.loconumberCode}</td>
+			<td align="left" class='td_body'>${locomotive.other}</td>
 			<td align="left" class='td_body'>${locomotive.didian}</td>
 		</tr>
 	</c:forEach>

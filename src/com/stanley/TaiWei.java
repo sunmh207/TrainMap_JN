@@ -11,7 +11,7 @@ public class TaiWei implements Serializable{
 	private String x;
 	private String y;
 	private String currentCH;
-	//private String loconumberCode;//车号缩位编码
+	private String loconumberCode;//车号缩位编码
 	private String currentDriver;
 	private String currentDriver2;
 	private String startTime;
@@ -118,12 +118,12 @@ public class TaiWei implements Serializable{
 		this.issueContent = issueContent;
 	}
 	
-	/*public String getLoconumberCode() {
+	public String getLoconumberCode() {
 		return loconumberCode;
 	}
 	public void setLoconumberCode(String loconumberCode) {
 		this.loconumberCode = loconumberCode;
-	}*/
+	}
 	
 	public String getDidian() {
 		return didian;
@@ -131,10 +131,10 @@ public class TaiWei implements Serializable{
 	public void setDidian(String didian) {
 		this.didian = didian;
 	}
-	/*public String toString(){
-		return this.getGdName()+"|"+this.getX()+"|"+this.getY()+"|"+this.getLoconumberCode()+"|"+this.getCurrentDriver()+"|"+this.getCurrentDriver2()+"|"+this.getStartTime()+"|"+this.getStartStation()+"|"+this.getEndTime()+"|"+this.getEndStation()+"|"+this.getNote()+"|"+this.getHasIssue()+"|"+this.getIssueContent();
-	}*/
 	public String toString(){
-		return this.getGdName()+"|"+this.getX()+"|"+this.getY()+"|"+this.getCurrentCH()+"|"+this.getCurrentDriver()+"|"+this.getCurrentDriver2()+"|"+this.getStartTime()+"|"+this.getStartStation()+"|"+this.getEndTime()+"|"+this.getEndStation()+"|"+this.getNote()+"|"+this.getHasIssue()+"|"+this.getIssueContent();
+		return this.getGdName()+"|"+this.getX()+"|"+this.getY()+"|"+this.getLoconumberCode()+"|"+this.getCurrentDriver()+"|"+this.getCurrentDriver2()+"|"+this.getStartTime()+"|"+this.getStartStation()+"|"+this.getEndTime()+"|"+this.getEndStation()+"|"+this.getNote()+"|"+this.getHasIssue()+"|"+this.getIssueContent();
 	}
+	/*public String toString(){
+		return this.getGdName()+"|"+this.getX()+"|"+this.getY()+"|"+this.getCurrentCH()+"|"+this.getCurrentDriver()+"|"+this.getCurrentDriver2()+"|"+this.getStartTime()+"|"+this.getStartStation()+"|"+this.getEndTime()+"|"+this.getEndStation()+"|"+this.getNote()+"|"+this.getHasIssue()+"|"+this.getIssueContent();
+	}*/
 }

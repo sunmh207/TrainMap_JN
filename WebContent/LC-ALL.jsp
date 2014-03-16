@@ -29,7 +29,7 @@ var jsonrpc = new JSONRpcClient("JSON-RPC");
 	border-left-style:solid;
 	border-left-color:rgb(176,176,176);
 	border-left-width:1px;
-	font-size:12px;
+	font-size:8px;
 	background-image: url(${root}/images/nav_bj.gif); 
 	width:1280px;
 }
@@ -38,7 +38,7 @@ var jsonrpc = new JSONRpcClient("JSON-RPC");
  
 <BODY topmargin="0" leftmargin="0">
 <div align="center" >
-<div id="map" style="width:1675px;height:1030px;background-color:000099;"></div>
+<div id="map" style="width:1675px;height:1030px;background-color:022161;"></div>
 </div>
 <div id="alert" style="display:none;position:fixed;TEXT-ALIGN:center;vertical-align:middle;top:450;height:200;width:100%;z-index:1000000;font-size: 50px; border:1 solid red;background-color:red;">后台数据没有更新！</div>
 
@@ -121,7 +121,7 @@ function AmoyMapType() {
 	}
 }
 MapModel.mapTypes = new Array(new AmoyMapType());
-MapModel.maxZoomLevel=1;
+MapModel.maxZoomLevel=2;
 
 var mapbuilder = new MapBuilder($("map"));
 //mapbuilder.outputMap(new Point(0, 0), 2);

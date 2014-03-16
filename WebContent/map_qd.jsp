@@ -141,14 +141,14 @@ var map = mapbuilder.getMap();
 window.setInterval(_refreshMarker(map),5000);
 //refreshMarker(map);
 // 在地图上加入双击事件
-MapEvent.addListener(map, MapEvent.DBLCLICK, function(e) {
+/* MapEvent.addListener(map, MapEvent.DBLCLICK, function(e) {
 	var coord = MapEvent.getEventCoord(e, map);
 	//alert(coord.toString());
 	var marker = new Marker(coord.getPoint(), Marker.TRAIN_GREEN_SMALL);
 	map.addOverlay(marker);
   	//alert(coord.x/1e16+":"+coord.y/1e16);
 	marker.setInfo("车号:T000 &nbsp; 车道:D000<br> 司机：张三&nbsp; 副司机:李四 <br>位置:"+coord.x/1e16+","+coord.y/1e16);
-});
+}); */
 //-->
 </SCRIPT>
 </BODY>
