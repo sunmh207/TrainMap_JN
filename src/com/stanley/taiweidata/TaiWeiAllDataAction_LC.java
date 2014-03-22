@@ -34,6 +34,9 @@ public class TaiWeiAllDataAction_LC extends JITActionBase implements Preparable 
 	
 	private String newGDName;
 	
+	private String qryGDName;
+	private String qryCH;
+	
 	public void prepare() throws JTException {
 		if (svr_lc == null) {
 			svr_lc = new TaiWeiManager_LC();
@@ -145,7 +148,14 @@ public class TaiWeiAllDataAction_LC extends JITActionBase implements Preparable 
 	}
 	
 	public String getListHQL(ArrayList<Object> params) throws JTException {
-		return "from TaiWeiAll where didian='聊城' order by gdName";
+		StringBuffer hqlb=new StringBuffer("from TaiWeiAll where didian='聊城'");
+		if(qryGDName!=null&&!qryGDName.trim().equals("")){
+			hqlb.append(" and gdName like '%"+qryGDName+"%'");
+		}
+		if(qryCH!=null&&!qryCH.trim().equals("")){
+			hqlb.append(" and currentCH like '%"+qryCH+"%'");
+		}
+		return hqlb.append(" order by gdName").toString();
 	}
 	public Gudao getGudao() {
 		return gudao;
@@ -196,6 +206,17 @@ public class TaiWeiAllDataAction_LC extends JITActionBase implements Preparable 
 	public void setNewGDName(String newGDName) {
 		this.newGDName = newGDName;
 	}
-	
+	public String getQryGDName() {
+		return qryGDName;
+	}
+	public void setQryGDName(String qryGDName) {
+		this.qryGDName = qryGDName;
+	}
+	public String getQryCH() {
+		return qryCH;
+	}
+	public void setQryCH(String qryCH) {
+		this.qryCH = qryCH;
+	}
 	
 }

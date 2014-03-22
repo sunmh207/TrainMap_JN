@@ -4,10 +4,11 @@
 <body>
 <html:topNav/>
 <form id="searchForm" action="${root}/taiweialldata_qd.do">
-<%-- <div style="float: left; padding-bottom: 0px;">
-	机车号 <input name="qrych" value='${qrych}' size="50">
+ <div style="float: left; padding-bottom: 0px;">
+	台位 <input name="qryGDName" value='${qryGDName}' size="10">
+	机车号 <input name="qryCH" value='${qryCH}' size="10"> 
 	<input type="button" value="搜索" onclick="javascript:goPage(1)">  
-</div> --%>
+</div> 
 <html:pagination exportExcel="false"/>
 </form>
 <s:actionerror/>

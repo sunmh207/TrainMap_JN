@@ -1,4 +1,4 @@
-ï»¿/**
+/**
  * Copyright 2006 mapeasy.sf.net.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
  */
 
 /**
- * åœ°å›¾è¦†ç›–ç‰©æŠ½è±¡ç±»
+ * µØÍ¼¸²¸ÇÎï³éÏóÀà
  *
  * @author Tim.Wu Michael.Young
  */
@@ -24,16 +24,16 @@ function Overlay(point, icon, shadowIcon) {
 	// Inherit from BaseModel
 	BaseModel.apply(this);
 	
-	/** è¦†ç›–ç‰©çš„åŒºåŸŸèŒƒå›´ */
+	/** ¸²¸ÇÎïµÄÇøÓò·¶Î§ */
 	this.bound;
 	
-	/** åæ ‡ */
+	/** ×ø±ê */
 	this.coord = point.getCoord();
 	
-	/** å›¾å½¢ */
+	/** Í¼ĞÎ */
 	this.icon = icon;
 	
-	/** é˜´å½±å›¾å½¢ */
+	/** ÒõÓ°Í¼ĞÎ */
 	this.shadowIcon = shadowIcon;
 
 	this.events = new Array();
@@ -61,7 +61,7 @@ function Overlay(point, icon, shadowIcon) {
 Overlay.zIndex = 10;
 
 /**
- * è¦†ç›–ç‰©å›¾æ ‡
+ * ¸²¸ÇÎïÍ¼±ê
  *
  * @author Tim.Wu Michael.Young
  */
@@ -73,12 +73,12 @@ function Icon(width, height, src) {
 
 
 /**
- * æ ‡è®°
+ * ±ê¼Ç
  *
  * @author Tim.Wu Michael.Young
  *
- * @param point æ ‡è®°ç‚¹
- * @param markerIcon æ ‡è®°å›¾æ ‡
+ * @param point ±ê¼Çµã
+ * @param markerIcon ±ê¼ÇÍ¼±ê
  */
 function Marker(point, iconSet) {
 	
@@ -114,7 +114,12 @@ Marker.SMALL = new Array(new Icon(12, 20, imgBaseDir + "marker_small.png"), new 
 Marker.TRAIN_RED_BIG = new Array(new Icon(128, 70, imgBaseDir + "marker_train_red_big.png"), new Icon(1, 1, imgBaseDir + "1x1.png"));
 Marker.TRAIN_RED_MIDDLE = new Array(new Icon(64, 35, imgBaseDir + "marker_train_red_middle.png"), new Icon(1, 1, imgBaseDir + "1x1.png"));
 Marker.TRAIN_RED_SMALL = new Array(new Icon(32, 18, imgBaseDir + "marker_train_red_small.png"), new Icon(1, 1, imgBaseDir + "1x1.png"));
-Marker.TRAIN_GREEN_BIG = new Array(new Icon(128,70, imgBaseDir + "marker_train_green_big.png"), new Icon(1, 1, imgBaseDir + "1x1.png"));
+/*Marker.TRAIN_GREEN_BIG = new Array(new Icon(128,70, imgBaseDir + "marker_train_green_big.png"), new Icon(1, 1, imgBaseDir + "1x1.png"));
 Marker.TRAIN_GREEN_MIDDLE = new Array(new Icon(64,35, imgBaseDir + "marker_train_green_middle.png"), new Icon(1, 1, imgBaseDir + "1x1.png"));
 Marker.TRAIN_GREEN_SMALL = new Array(new Icon(32, 18, imgBaseDir + "marker_train_green_small.png"), new Icon(1, 1, imgBaseDir + "1x1.png"));
+*/
+Marker.TRAIN_GREEN_BIG = new Array(new Icon(1,1, imgBaseDir + "marker_train_green_big.png"), new Icon(1, 1, imgBaseDir + "1x1.png"));
+Marker.TRAIN_GREEN_MIDDLE = new Array(new Icon(1,1, imgBaseDir + "marker_train_green_middle.png"), new Icon(1, 1, imgBaseDir + "1x1.png"));
+Marker.TRAIN_GREEN_SMALL = new Array(new Icon(1, 1, imgBaseDir + "marker_train_green_small.png"), new Icon(1, 1, imgBaseDir + "1x1.png"));
+
 Marker.TRAIN_NOICON = new Array(new Icon(32, 1, imgBaseDir + "1x1.png"), new Icon(1, 1, imgBaseDir + "1x1.png"));
